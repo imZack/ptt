@@ -19,7 +19,7 @@ describe('Articles (Board)', () => {
           article.should.have.property('push');
           article.should.have.property('url');
         });
-        console.log(JSON.stringify(data));
+
         done();
       })
       .catch(done);
@@ -36,7 +36,7 @@ describe('Article', () => {
         data.should.have.property('boardName');
         data.should.have.property('images');
         data.should.have.property('title');
-        console.log(JSON.stringify(data));
+
         done();
       })
       .catch(done);
