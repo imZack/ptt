@@ -1,6 +1,6 @@
 {
   "name": "ptt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Play ptt.cc with JS.",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
   },
-  "engines" : {
+  "engines": {
     "node": ">=4"
   }
 }
