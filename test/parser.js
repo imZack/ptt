@@ -10,6 +10,7 @@ describe('Articles (Board)', () => {
     getArticlesFromLink('https://www.ptt.cc/bbs/gossiping/index.html')
       .then((data) => {
         data.should.have.property('nextPageUrl');
+        data.nextPageUrl.should.not.eq('https://www.ptt.ccundefined');
         data.should.have.property('articles');
         data.articles.should.have.be.a.Array;
         data.articles.forEach((article) => {
