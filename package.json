@@ -1,6 +1,6 @@
 {
   "name": "ptt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Play ptt.cc with JS.",
   "main": "index.js",
   "scripts": {
