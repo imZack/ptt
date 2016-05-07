@@ -36,6 +36,7 @@ describe('Article', () => {
         data.should.have.property('author');
         data.should.have.property('boardName');
         data.should.have.property('images');
+        data.should.have.property('links');
         data.should.have.property('title');
 
         done();
