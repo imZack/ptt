@@ -11,6 +11,7 @@ describe('Articles (Board)', () => {
       .then((data) => {
         data.should.have.property('nextPageUrl');
         data.nextPageUrl.should.not.eq('https://www.ptt.ccundefined');
+        data.boardName.should.be.eq('Gossiping');
         data.should.have.property('articles');
         data.articles.should.have.be.a.Array;
         data.articles.forEach((article) => {
