@@ -39,6 +39,7 @@ describe('Article', () => {
         data.should.have.property('images');
         data.should.have.property('links');
         data.should.have.property('title');
+        data.should.have.property('url');
 
         done();
       })
