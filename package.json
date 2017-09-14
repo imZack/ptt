@@ -4,7 +4,7 @@
   "description": "Play ptt.cc with JS.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
