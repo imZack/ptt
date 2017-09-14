@@ -47,17 +47,9 @@ describe('Article', () => {
   });
 
   it('should parse Article images by given article url', (done) => {
-    getArticleFromLink('https://www.ptt.cc/bbs/sex/M.1505298086.A.EA1.html')
+    getArticleFromLink('https://www.ptt.cc/bbs/Beauty/M.1505397483.A.C14.html')
       .then((data) => {
-        data.should.have.property('content');
-        data.should.have.property('date');
-        data.should.have.property('author');
-        data.should.have.property('boardName');
-        data.should.have.property('images');
-        data.should.have.property('links');
-        data.should.have.property('title');
-        data.should.have.property('url');
-
+        data.images[0].should.be.equal('//imgur.com/dkz25TX');
         done();
       })
       .catch(done);
